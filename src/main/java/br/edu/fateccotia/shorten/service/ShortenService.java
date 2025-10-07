@@ -3,9 +3,9 @@ package br.edu.fateccotia.shorten.service;
 import java.util.Optional;
 import java.util.Random;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import br.edu.fateccotia.shorten.identity.Code;
+
+import br.edu.fateccotia.shorten.entity.Code;
 import br.edu.fateccotia.shorten.repository.ShortenRepository;
 
 @Service
@@ -15,7 +15,6 @@ public class ShortenService {
 	private final ShortenRepository shortenRepository;
 	
 	
-	@Autowired
     public ShortenService(ShortenRepository shortenRepository) {
         this.shortenRepository = shortenRepository;
     }
